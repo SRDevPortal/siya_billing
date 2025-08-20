@@ -1,2 +1,3 @@
 graft siya_billing
+recursive-include siya_billing *.json *.md *.py *.txt *.css *.js *.svg *.html
 global-exclude *.pyc

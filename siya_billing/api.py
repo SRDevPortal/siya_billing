@@ -1,5 +1,3 @@
-# your API goes here
-
 import frappe
 from frappe.utils import nowdate
 from frappe.utils.data import flt
