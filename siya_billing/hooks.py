@@ -8,6 +8,10 @@ app_license = "MIT"
 # You use ERPNext doctypes (Sales Invoice, Patient), so require it:
 required_apps = ["erpnext"]
 
+override_whitelisted_methods = {
+    "siya_billing.api.create_full_invoice": "siya_billing.api.create_full_invoice"
+}
+
 doc_events = {
     "Sales Invoice": {
         "on_submit": "siya_billing.api.create_payment_entry_on_invoice_submit"
